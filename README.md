@@ -39,6 +39,10 @@ Clone the repository and install dependencies:
    ```bash
    poetry install
    ```
+5️⃣ **run project**  
+   ```bash
+   poe run
+   ```
 
 
 
