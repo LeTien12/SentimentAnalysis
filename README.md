@@ -18,7 +18,7 @@
 
 ## 📦 Installation
 
-Clone the repository and install dependencies:
+### 🔹Clone the repository and install dependencies:
 
 1️⃣ **Clone the repository**  
    ```bash
@@ -39,10 +39,33 @@ Clone the repository and install dependencies:
    ```bash
    poetry install
    ```
+
 5️⃣ **run project**  
    ```bash
    poe run
    ```
+
+## 🐳 Run with Docker
+
+###🔹If you prefer running the application inside a Docker container, you can pull the prebuilt image from Docker Hub:
+
+1️⃣ **Pull the prebuilt Docker image**  
+   ```bash
+   docker pull tienle080102/my-classify-app
+   ```
+
+2️⃣ **Run the Docker container**  
+   ```bash
+   docker run -p 8501:8501 tienle080102/my-classify-app
+   ```
+
+3️⃣ **Access the application**  
+   ```bash
+   👉 http://localhost:8000
+   ```
+
+
+docker pull tienle080102/my-classify-app
 
 
 
