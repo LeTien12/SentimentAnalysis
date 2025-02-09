@@ -18,7 +18,7 @@
 
 ## 📦 Installation
 
-### 🔹Clone the repository and install dependencies:
+# 🔹Clone the repository and install dependencies:
 
 1️⃣ **Clone the repository**  
    ```bash
@@ -47,7 +47,7 @@
 
 ## 🐳 Run with Docker
 
-###🔹If you prefer running the application inside a Docker container, you can pull the prebuilt image from Docker Hub:
+# 🔹If you prefer running the application inside a Docker container, you can pull the prebuilt image from Docker Hub:
 
 1️⃣ **Pull the prebuilt Docker image**  
    ```bash
