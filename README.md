@@ -18,8 +18,6 @@
 
 ## 📦 Installation
 
-#### 🔹Clone the repository and install dependencies:
-
 1️⃣ **Clone the repository**  
    ```bash
    git clone https://github.com/LeTien12/SentimentAnalysis.git
@@ -47,8 +45,6 @@
 
 ## 🐳 Run with Docker
 
-#### 🔹If you prefer running the application inside a Docker container, you can pull the prebuilt image from Docker Hub:
-
 1️⃣ **Pull the prebuilt Docker image**  
    ```bash
    docker pull tienle080102/my-classify-app
@@ -61,13 +57,8 @@
 
 3️⃣ **Access the application**  
    ```bash
-   👉 http://localhost:8000
+   👉 http://localhost:8501
    ```
-
-
-docker pull tienle080102/my-classify-app
-
-
 
 ## 🔥 Benchmarks
 Both BERT and DistilBERT are fine-tuned on dair-ai/emotion, detecting emotions across six categories:
@@ -80,7 +71,6 @@ Fork the repo and create a new branch
 Make your changes and test them
 Open a Pull Request
 For major changes, please open an issue first to discuss your proposal.
-
 
 ## 📄 License
 - This project is licensed under the MIT License - see the LICENSE file for details.
