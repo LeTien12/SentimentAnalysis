@@ -5,9 +5,22 @@
 ![GitHub issues](https://img.shields.io/github/issues/LeTien12/SentimentAnalysis)
 ![License](https://img.shields.io/github/license/LeTien12/SentimentAnalysis)
 
-## 🌟 Overview
+## 🌟 Overview  
 
-**SentimentAnalysis** is an NLP model for emotion detection trained on the **`dair-ai/emotion`** dataset. It supports **BERT (`bert-base-uncased`)** and **DistilBERT (`distilbert-base-uncased`)**, balancing accuracy and efficiency.
+**SentimentAnalysis** is a **Natural Language Processing (NLP) model** designed for **emotion detection**, trained on the **dair-ai/emotion** dataset. The model supports both **BERT (`bert-base-uncased`)** and **DistilBERT (`distilbert-base-uncased`)**, offering a **balance between accuracy and efficiency**.  
+
+To enhance performance and reduce computational costs, the **DistilBERT** variant is optimized using:  
+- **Knowledge Distillation** 🧠 – Transfers knowledge from a larger model to a smaller one.  
+- **ONNX Optimization** ⚡ – Converts the model to ONNX format for faster inference.  
+- **Quantization** 🔢 – Reduces model size and speeds up computations while maintaining accuracy.  
+
+This model can classify text into **multiple emotional categories**, making it useful for:  
+✅ **Chatbots** 🤖 – Understanding user emotions in real-time.  
+✅ **Sentiment Analysis** 📊 – Analyzing customer opinions and trends.  
+✅ **Customer Feedback Processing** 📝 – Improving user experience based on feedback.  
+✅ **Social Media Monitoring** 📢 – Detecting emotional trends on platforms like Twitter and Facebook.  
+
+🚀 With these optimizations, **SentimentAnalysis** is well-suited for **real-time applications with limited resources**.
 
 ## 🚀 Features
 
