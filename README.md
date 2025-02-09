@@ -20,7 +20,7 @@ This model can classify text into **multiple emotional categories**, making it u
 ✅ **Customer Feedback Processing** 📝 – Improving user experience based on feedback.  
 ✅ **Social Media Monitoring** 📢 – Detecting emotional trends on platforms like Twitter and Facebook.  
 
-🚀 With these optimizations, **SentimentAnalysis** is well-suited for **real-time applications with limited resources**.
+📝 With these optimizations, **SentimentAnalysis** is well-suited for **real-time applications with limited resources**.
 
 ## 🚀 Features
 
