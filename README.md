@@ -23,22 +23,26 @@ Clone the repository and install dependencies:
 1️⃣ **Clone the repository**  
    Download the project from GitHub:  
    ```bash
-   git clone https://github.com/LeTien12/SentimentAnalysis.git```
+   git clone https://github.com/LeTien12/SentimentAnalysis.git
+   ```
 
 2️⃣ **Navigate to the project directory**
     Move into the newly created project folder:
      ```bash
-    cd SentimentAnalysis```
+    cd SentimentAnalysis
+    ```
 
 1️⃣ **Activate the Poetry virtual environment**  
    This ensures all dependencies are installed in an isolated environment:  
    ```bash
-   poetry shell```
+   poetry shell
+   ```
 
 1️⃣ **Install dependencies**  
    Install all required packages listed in pyproject.toml:
    ```bash
-   poetry install```
+   poetry install
+   ```
 
 
 
