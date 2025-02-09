@@ -1,4 +1,4 @@
-# 📊 SentimentAnalysis - AI-Powered Sentiment Classification
+# 📊 SentimentAnalysis - Emotion Detection with BERT & DistilBERT
 
 ![GitHub stars](https://img.shields.io/github/stars/LeTien12/SentimentAnalysis?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/LeTien12/SentimentAnalysis?style=social)
@@ -7,14 +7,14 @@
 
 ## 🌟 Overview
 
-**SentimentAnalysis** is an AI-driven sentiment classification model that detects the emotional tone of text (positive or negative). It is built using **RoBERTa** and fine-tuned with knowledge distillation to optimize performance.
+**SentimentAnalysis** is an NLP model for emotion detection trained on the **`dair-ai/emotion`** dataset. It supports **BERT (`bert-base-uncased`)** and **DistilBERT (`distilbert-base-uncased`)**, balancing accuracy and efficiency.
 
 ## 🚀 Features
 
-- 🔥 **State-of-the-art NLP** using RoBERTa-based transformer model  
-- ⚡ **Optimized with Knowledge Distillation** for faster inference  
-- 📊 **High accuracy** on sentiment classification tasks  
-- 🔄 **Easy-to-use API** for integrating into applications  
+- 🧠 **Supports BERT & DistilBERT** for flexible trade-off between speed and accuracy  
+- 📊 **Trained on `dair-ai/emotion`**, detecting emotions like joy, anger, sadness, etc.  
+- ⚡ **Efficient inference with DistilBERT** for real-time applications  
+- 🔄 **Pretrained models available via Hugging Face**  
 
 ## 📦 Installation
 
@@ -24,3 +24,26 @@ Clone the repository and install dependencies:
 git clone https://github.com/LeTien12/SentimentAnalysis.git
 cd SentimentAnalysis
 pip install -r requirements.txt
+
+
+## 🔥 Benchmarks
+Both BERT and DistilBERT are fine-tuned on dair-ai/emotion, detecting emotions across six categories:
+😃 Joy | 😡 Anger | 😢 Sadness | 😱 Fear | 🤢 Disgust | 😯 Surprise
+
+## 🤝 Contributing
+We welcome contributions! Follow these steps to contribute:
+
+Fork the repo and create a new branch
+Make your changes and test them
+Open a Pull Request
+For major changes, please open an issue first to discuss your proposal.
+
+
+## 📄 License
+- This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🌟 Acknowledgments
+## 🤗 Hugging Face Transformers for BERT & DistilBERT
+## 📚 PyTorch for model training
+## 📊 dair-ai/emotion dataset for emotion classification
+
