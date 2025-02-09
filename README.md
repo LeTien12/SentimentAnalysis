@@ -28,7 +28,7 @@ Clone the repository and install dependencies:
 2️⃣ **Navigate to the project directory**
    ```bash
     cd SentimentAnalysis
-    ```
+   ```
 
 3️⃣ **Activate the Poetry virtual environment**  
    ```bash
