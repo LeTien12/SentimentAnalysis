@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "emotionclassification"
+version = "0.1.0"
+description = ""
+authors = ["TienLe12 <tle38413@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+poethepoet = "^0.31.1"
+PyYAML = "^6.0.2"
+tqdm = "4.67.1"
+torch= "2.6.0"
+
+#ELT
+selenium = "^4.27.0"
+beautifulsoup4 = "^4.12.3"
+html2text  = "2024.2.26"
+chromedriver_autoinstaller = "^0.6.4"
+pydantic-settings = "2.7.1"
+loguru = "0.7.3"
+
+matplotlib = "3.10.0"
+
+# Feature engineering
+transformers = "^4.48.2"
+datasets = "*"
+huggingface-hub = "^0.28.1"
+onnxruntime = "1.20.1"
+scipy = "1.15.1"
+scikit-learn = "1.6.1"
+onnx = "1.17.0"
+onnxruntime-tools = "1.7.0"
+onnxruntime_extensions = "0.13.0"
+onnxruntime-gpu = "1.20.1"
+optimum = "1.24.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+
+install = "python temperature.py"
+run = "streamlit run app.py --global.developmentMode=false"
