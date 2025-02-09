@@ -24,6 +24,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/LeTien12/SentimentAnalysis.git
 cd SentimentAnalysis
 pip install -r requirements.txt
+```
 
 
 ## 🔥 Benchmarks
