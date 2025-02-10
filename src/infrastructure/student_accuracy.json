@@ -1,0 +1,8 @@
+{
+    "Model_Strudent_ONNX": {
+        "size_mb": 43.8,
+        "accuracy": 0.926,
+        "time_avg_ms": 18.7,
+        "time_std_ms": 4.2
+    }
+}

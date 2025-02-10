@@ -2,7 +2,7 @@
 from src.settings import settings
 from src.engineer import PretrainModelStudent, OnnxPipeline, ModelONNX,PretrainModelTeacher
 from src.evalute import PerformanceBenchmark , OnnxPerformanceBenchmark
-from src.functions_active import save_json
+from src.functions_active import save_json , draw_plot
 
 
 
@@ -33,12 +33,22 @@ def pipeline() -> None:
 
     #Evalute model onnx
 
-    evalute_model_onnx = OnnxPerformanceBenchmark(model_teacher , dataset['test'] , optim_type = "Model_Strudent_ONNX" , model_path=model_path)
+    evalute_model_onnx = OnnxPerformanceBenchmark(model_onnx , dataset['test'] , optim_type = "Model_Strudent_ONNX" , model_path=model_path)
 
     #Save information model
 
     save_json(settings.PATH_FILE_ACCURACY_TEACHER , evalute_model_teacher)
     save_json(settings.PATH_FILE_ACCURACY_STUDENT , evalute_model_onnx)
+    
+    #Save image evaluation models
+    
+    models = {}
+    models.update(evalute_model_teacher)
+    models.update(evalute_model_onnx)
+    
+    draw_plot(models)
+    
+     
     
     
 

@@ -21,7 +21,7 @@ class PerformanceBenchmark:
             preds.append(self.pipeline.model.config.label2id[pred])
             labels.append(label)
         accuracy = accuracy_score(preds, labels)
-        return {"accuracy" : accuracy}
+        return accuracy
 
     def compute_size(self):
         """This overrides the PerformanceBenchmark.compute_size() method"""
@@ -49,7 +49,7 @@ class PerformanceBenchmark:
         # Compute run statistics
         time_avg_ms = 1000 * np.mean(latencies)
         time_std_ms = 1000 * np.std(latencies)
-        return {"time_avg_ms": time_avg_ms, "time_std_ms": time_std_ms}
+        return {"time_avg_ms": round(time_avg_ms , 1), "time_std_ms": round(time_std_ms,1)}
         
     def run_benchmark(self):
         metrics = {}

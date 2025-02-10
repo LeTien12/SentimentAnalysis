@@ -1,0 +1,8 @@
+{
+    "Model_Teacher": {
+        "size_mb": 417.72,
+        "time_avg_ms": 136.6,
+        "time_std_ms": 30.4,
+        "accuracy": 0.9215
+    }
+}

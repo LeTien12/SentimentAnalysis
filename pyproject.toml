@@ -45,4 +45,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poe.tasks]
 
 install = "python temperature.py"
-run = "streamlit run app.py --global.developmentMode=false"
+run = "python main.py"

@@ -39,6 +39,8 @@ class Settings(BaseSettings):
     
     PATH_FILE_ACCURACY_TEACHER:str = "./src/infrastructure/teacher_accuracy.json"
     PATH_FILE_ACCURACY_STUDENT:str = "./src/infrastructure/student_accuracy.json"
+    
+    SAVE_IMG:str ="./src/infrastructure/save_img/plot.jpg" 
 
     
     
