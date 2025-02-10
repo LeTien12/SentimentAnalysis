@@ -73,6 +73,9 @@ This model can classify text into **multiple emotional categories**, making it u
    👉 http://localhost:8501
    ```
 
+## 📊 Model Performance
+![image](src/infrastructure/save_img/plot.jpg)
+
 ## 🔥 Benchmarks
 Both BERT and DistilBERT are fine-tuned on dair-ai/emotion, detecting emotions across six categories:
 😃 Joy | 😡 Anger | 😢 Sadness | 😱 Fear | 🤢 Disgust | 😯 Surprise
