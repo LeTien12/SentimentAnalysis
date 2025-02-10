@@ -77,7 +77,7 @@ This model can classify text into **multiple emotional categories**, making it u
 ## 🚀 Introduction
 - **🟪 Model_Teacher**: Higher accuracy but significantly higher latency.
 - **🟨 Model_Student_ONNX**: Lower latency while maintaining competitive accuracy.
-- 
+ 
 ![image](src/infrastructure/save_img/plot.jpg)
 
 ## 📏 Model Size
@@ -89,8 +89,8 @@ This model can classify text into **multiple emotional categories**, making it u
 
 ## 🔍 Observations
 - 🏆 **Model_Student_ONNX is much faster** (~20ms vs. ~140ms for Model_Teacher).
-- 🎯 **Accuracy remains nearly the same** (~92.5% vs. ~93%).
-- 💡 **Optimization potential**: Further improvements can be made using quantization or pruning.
+- 🎯 **Accuracy remains nearly the same** (~92.6% vs. ~92.1%).
+- 💡 **Optimization potential**: Further improvements can be made using pruning.
 
 ## 🔥 Benchmarks
 Both BERT and DistilBERT are fine-tuned on dair-ai/emotion, detecting emotions across six categories:
