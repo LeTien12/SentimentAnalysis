@@ -1,0 +1,57 @@
+name: CI-CD Integration
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - "**/settings.py"
+      
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Download library python
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up python
+        uses: action/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache Poetry dependencies
+        id: poetry-cache  
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pypoetry  
+          key: poetry-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            poetry-${{ runner.os }}-
+
+      - name: Install library poetry
+        run : pip install poetry
+      - name: Check for pyproject.toml
+        run: |
+          if [ ! -f "pyproject.toml" ]; then
+            echo "❌ Error: pyproject.toml not found!"
+            exit 1
+          fi
+      - name: Install dependencies with Poetry
+        if: steps.poetry-cache.outputs.cache-hit = 'false'
+        run : poetry install
+
+      - name: Debug Poetry Cache
+        run: ls -lah ~/.cache/pypoetry
+        
+
+        
+
+        
+      
+    
+    
+    
