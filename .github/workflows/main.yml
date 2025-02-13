@@ -34,13 +34,6 @@ jobs:
           key: poetry-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
           restore-keys: |
             poetry-${{ runner.os }}-
-
-      - name: Check for pyproject.toml
-        run: |
-          if [ ! -f "pyproject.toml" ]; then
-            echo "❌ Error: pyproject.toml not found!"
-            exit 1
-          fi
           
       - name: Install dependencies with Poetry
         if: steps.poetry-cache.outputs.cache-hit == 'false'
