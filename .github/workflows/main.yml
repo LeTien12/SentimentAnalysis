@@ -41,7 +41,7 @@ jobs:
             exit 1
           fi
       - name: Install dependencies with Poetry
-        if: steps.poetry-cache.outputs.cache-hit = 'false'
+        if: steps.poetry-cache.outputs.cache-hit == 'false'
         run : poetry install
 
       - name: Debug Poetry Cache
